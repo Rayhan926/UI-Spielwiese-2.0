@@ -1,0 +1,145 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap'); */
+
+#demo-simple-select {
+  overflow: hidden;
+  padding: 0.5rem 0.3rem !important;
+}
+
+#demo-simple-select-label {
+  font-family: "IBM Plex Mono";
+  font-size: 12px;
+}
+* {
+  font-family: "IBM Plex Mono";
+}
+a {
+  text-decoration: none !important;
+}
+.tc {
+  color: #fff;
+  font-weight: 400;
+}
+.tc:hover {
+  color: white;
+}
+.hvoer_border:hover {
+  border: 2px solid #0d5fc9;
+}
+.hvr {
+  background-image: linear-gradient(140deg, #1db0ff 0%, #0d5fc9 100%);
+}
+.pr {
+  color: #fff;
+  border: 1px solid #0d5fc9;
+}
+p {
+  margin-bottom: 0 !important;
+}
+h2,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0 !important;
+}
+
+.an {
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  0% {
+    padding-left: 0px;
+  }
+  50% {
+    padding-left: 10px;
+  }
+  100% {
+    padding-left: 0px;
+  }
+}
+/* .progress-bar{
+  background-color: #0D5FC9!important;
+ 
+} */
+.progress1 .progress-bar {
+  background-color: #a32dda !important;
+}
+.progress2 .progress-bar {
+  background-color: #23d30c !important;
+}
+.progress3 .progress-bar {
+  background-color: #e42012 !important;
+}
+.progress4 .progress-bar {
+  background-color: #fdaa0f !important;
+}
+.progress6 .progress-bar {
+  background-color: #fd0fdd !important;
+}
+.progress {
+  height: 8px !important;
+}
+.rbc-btn-group {
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+}
+.rbc-btn-group button {
+  background: #0d5fc9 !important;
+  color: white !important;
+  border: none !important;
+}
+.rbc-btn-group button:hover {
+  background: #0d5fc9 !important;
+}
+.rbc-event {
+  background: #0d5fc9 !important;
+}
+
+::selection {
+  background: #1daffd;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #272b37;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #313644;
+}
+
+a:hover {
+  color: white;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.table_tr_mobile {
+  @apply grid bg-hr rounded py-1 px-3;
+  grid-template-columns: 1fr 2fr;
+}
+
+.table_tr_mobile > p:first-child {
+  @apply text-gray-400;
+}
+.table_tr_mobile > p:last-child {
+  @apply text-gray-300;
+}
+
+.__sticky_thead {
+  @apply sticky top-0 left-0 w-full z-10 bg-tabelle;
+}
